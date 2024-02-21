@@ -44,6 +44,29 @@ While the Sigma Rule Generator leverages the power of OpenAI's GPT models to off
 - **Stay Informed:** Keep abreast of the latest developments in both GPT models and cybersecurity threats. Regularly updating your knowledge base can help mitigate some of the limitations related to data currency and model understanding.
 - **Hybrid Approaches:** Consider using the Sigma Rule Generator as part of a hybrid approach, combining AI-generated insights with expert human analysis for the best results.
 
+
+## Usage
+
+To use the Sigma Rule Generator, follow these steps:
+
+
+1. **Configuration:**
+   Set your OpenAI API key as an environment variable. Replace `your_api_key_here` with your actual OpenAI API key.
+
+   ```bash
+   export OPENAI_API_KEY=your_api_key_here
+   # On Windows use `set OPENAI_API_KEY=your_api_key_here`
+   ```
+
+2. **Running the Tool:**
+   Use the script to generate a Sigma rule by providing a description of the rule you want to generate. Here's an example command:
+
+   ```bash
+   python sigma_rule_gen.py --description "Describe the rule here"
+   ```
+
+   The script will output the generated Sigma rule to the console. You can redirect this output to a file if needed.
+
 ## License
 
 This project is released under the MIT License. Feel free to use, modify, and distribute it as per the license terms.
